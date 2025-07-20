@@ -53,29 +53,29 @@
             "keyColor": "green"
         },
         {
-            "type": "terminal",
-            "key": " ",
-            "keyColor": "green"
-        },
-        {
-            "type": "shell",
-            "key": " ",
-            "keyColor": "green"
-        },
-        "break",
-        {
             "type": "de",
             "key": " ",
-            "keyColor": "cyan"
+            "keyColor": "green"
         },
         {
             "type": "wm",
             "key": " ",
-            "keyColor": "cyan"
+            "keyColor": "green"
         },
         {
             "type": "wmtheme",
             "key": "󰉼 ",
+            "keyColor": "green"
+        },
+        "break",
+        {
+            "type": "terminal",
+            "key": " ",
+            "keyColor": "cyan"
+        },
+        {
+            "type": "shell",
+            "key": " ",
             "keyColor": "cyan"
         },
         {
