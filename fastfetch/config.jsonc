@@ -8,22 +8,25 @@
     }
   },
   "display": {
-    "separator": "  "
+    "separator": "  ",
+    "constants": [
+            "─────────────────────────────────────────────"
+        ]
   },
   "modules": [
     // Title
     {
       "type": "title",
-      "format": "{#1}┌{#}{user-name-colored}──────────────────────────────────────────────────────"
+      "format": "{#1}┌{#}{user-name-colored}{$1}────────────────┐"
     },
     // System Information
     {
       "type": "custom",
-      "format": "{#1}│ ┌{#}System Information───────────────────────────────────────"
+      "format": "{#1}│ ┌{#}System Information{$1}┐"
     },
     {
       "type": "os",
-      "key": "{#separator}│ │ {#keys}󰍹 OS"
+      "key": "{#separator}│ │ {#keys}󰍹 OS    "
     },
     {
       "type": "kernel",
@@ -40,24 +43,24 @@
     },
     {
       "type": "custom",
-      "format": "{#1}│ └─────────────────────────────────────────────────────────"
+      "format": "{#1}│ └{$1}──────────────────┘"
     },
     // Desktop Environment
     {
       "type": "custom",
-      "format": "{#1}│ ┌{#}Desktop Environment──────────────────────────────────────"
+      "format": "{#1}│ ┌{#}Desktop Environment────────────────────────────────────────────┐"
     },
     {
       "type": "de",
-      "key": "{#separator}│ │ {#keys}󰧨 DE"
+      "key": "{#separator}│ │ {#keys}󰧨 DE        "
     },
     {
       "type": "wm",
-      "key": "{#separator}│ │ {#keys}󱂬 WM"
+      "key": "{#separator}│ │ {#keys}󱂬 WM        "
     },
     {
       "type": "wmtheme",
-      "key": "{#separator}│ │ {#keys}󰉼 Theme"
+      "key": "{#separator}│ │ {#keys}󰉼 Theme     "
     },
     {
       "type": "display",
@@ -65,36 +68,36 @@
     },
     {
       "type": "shell",
-      "key": "{#separator}│ │ {#keys}󰞷 Shell"
+      "key": "{#separator}│ │ {#keys}󰞷 Shell     "
     },
     {
       "type": "terminal",
-      "key": "{#separator}│ │ {#keys}󰞷 Terminal"
+      "key": "{#separator}│ │ {#keys}TTerminal  "
     },
     {
       "type": "terminalfont",
-      "key": "{#separator}│ │ {#keys}󰛖 Font"
+      "key": "{#separator}│ │ {#keys}󰛖 Font      "
     },
     {
       "type": "custom",
-      "format": "{#1}│ └─────────────────────────────────────────────────────────"
+      "format": "{#1}│ └{$1}──────────────────┘"
     },
     // Hardware Information
     {
       "type": "custom",
-      "format": "{#1}│ ┌{#}Hardware Information─────────────────────────────────────"
+      "format": "{#1}│ ┌{#}Hardware Information───────────────────────────────────────────┐"
     },
     {
       "type": "cpu",
-      "key": "{#separator}│ │ {#keys}󰻠 CPU"
+      "key": "{#separator}│ │ {#keys}󰻠 CPU     "
     },
     {
       "type": "gpu",
-      "key": "{#separator}│ │ {#keys}󰢮 GPU"
+      "key": "{#separator}│ │ {#keys}󰢮 GPU     "
     },
     {
       "type": "memory",
-      "key": "{#separator}│ │ {#keys}󰍛 Memory"
+      "key": "{#separator}│ │ {#keys}󰍛 Memory  "
     },
     {
       "type": "disk",
@@ -103,12 +106,12 @@
     },
     {
       "type": "custom",
-      "format": "{#1}│ └─────────────────────────────────────────────────────────"
+      "format": "{#1}│ └{$1}──────────────────┘"
     },
     // Colors
     {
       "type": "custom",
-      "format": "{#1}│ ┌─────────────────────────────────────────────────────────"
+      "format": "{#1}│ ┌{$1}──────────────────┐"
     },
     {
       "type": "colors",
@@ -117,12 +120,12 @@
     },
     {
       "type": "custom",
-      "format": "{#1}│ └─────────────────────────────────────────────────────────"
+      "format": "{#1}│ └{$1}──────────────────┘"
     },
     // Footer
     {
       "type": "custom",
-      "format": "{#1}└───────────────────────────────────────────────────────────"
+      "format": "{#1}└{$1}─────────────────────┘"
     }
   ]
 }
