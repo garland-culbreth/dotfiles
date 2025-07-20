@@ -8,120 +8,87 @@
             "right": 2
         }
     },
-    "display": {
-        "separator": "",
-        "color": {
-            "separator": "black"
-        },
-        "constants": [
-            "──────────────────────────────────────────────────────────────────────",
-            "│\u001b[70C│\u001b[70D"
-        ]
-    },
     "modules": [
+        "break",
         {
-            "format": "{#1}{#keys}┌{$1}┐\u001b[71D{user-name-colored}{at-symbol-colored}{host-name-colored}",
-            "type": "title"
+            "type": "host",
+            "key": " ",
+            "keyColor": "yellow"
         },
         {
-            "format": "{#1}{#keys}└{$1}┘",
-            "type": "custom"
-        },
-        {
-            "format": "{#1}{#keys}┌{$1}┐\u001b[71DSystem information",
-            "type": "custom"
-        },
-        {
-            "key": "{$2}{#32}{icon} OS       ",
-            "type": "os"
-        },
-        {
-            "key": "{$2}{#32} Kernel   ",
-            "type": "kernel"
-        },
-        {
-            "key": "{$2}{#32}󰅐 Uptime   ",
-            "type": "uptime"
-        },
-        {
-            "format": "{#1}{#keys}└{$1}┘",
-            "type": "custom"
-        },
-        {
-            "format": "{#1}{#keys}┌{$1}┐\u001b[71DDesktop environment",
-            "type": "custom"
-        },
-        {
-            "key": "{$2}{#34}󰇄 Desktop  ",
-            "type": "de"
-        },
-        {
-            "key": "{$2}{#34} Term     ",
-            "type": "terminal"
-        },
-        {
-            "key": "{$2}{#34} Shell    ",
-            "type": "shell"
-        },
-        {
-            "key": "{$2}{#34}󰛖 Font     ",
-            "type": "terminalfont"
-        },
-        {
-            "format": "{#1}{#keys}└{$1}┘",
-            "type": "custom"
-        },
-        {
-            "format": "{#1}{#keys}┌{$1}┐\u001b[71DHardware information",
-            "type": "custom"
-        },
-        {
-            "key": "{$2}{#35}󰌢 MB       ",
-            "type": "host"
-        },
-        {
-            "key": "{$2}{#35}󰍛 CPU      ",
             "type": "cpu",
+            "key": " ",
             "showPeCoreCount": true,
-            "temp": true
+            "keyColor": "yellow"
         },
         {
-            "key": "{$2}{#35}󰾲 GPU      ",
-            "type": "gpu"
+            "type": "gpu",
+            "key": "󰾲 ",
+            "keyColor": "yellow"
         },
         {
-            "key": "{$2}{#35}󰑭 Memory   ",
-            "type": "memory"
+            "type": "memory",
+            "key": " ",
+            "keyColor": "yellow"
         },
         {
-            "key": "{$2}{#35} Disk     ",
             "type": "disk",
-            "folders": "/"
+            "key": " ",
+            "keyColor": "yellow"
+        },
+        "break",
+        {
+            "type": "os",
+            "key": " ",
+            "keyColor": "green"
         },
         {
-            "key": "{$2}{#35}󰍹 Display  ",
-            "type": "display"
+            "type": "kernel",
+            "key": " ",
+            "keyColor": "green"
         },
         {
-            "key": "{$2}{#35} Sound    ",
-            "type": "sound"
+            "type": "packages",
+            "key": "󰏖 ",
+            "keyColor": "green"
         },
         {
-            "format": "{#1}{#keys}└{$1}┘",
-            "type": "custom"
+            "type": "terminal",
+            "key": " ",
+            "keyColor": "green"
         },
         {
-            "format": "{#1}{#keys}┌{$1}┐",
-            "type": "custom"
+            "type": "shell",
+            "key": " ",
+            "keyColor": "green"
+        },
+        "break",
+        {
+            "type": "de",
+            "key": " ",
+            "keyColor": "cyan"
         },
         {
-            "key": "{$2}{#39}󰉼 Colors   ",
-            "type": "colors",
-            "symbol": "circle"
+            "type": "wm",
+            "key": " ",
+            "keyColor": "cyan"
         },
         {
-            "format": "{#1}{#keys}└{$1}┘",
-            "type": "custom"
-        }
+            "type": "wmtheme",
+            "key": "󰉼 ",
+            "keyColor": "cyan"
+        },
+        {
+            "type": "terminalfont",
+            "key": "󰛖 ",
+            "keyColor": "cyan"
+        },
+        "break",
+        {
+            "type": "uptime",
+            "key": " ",
+            "keyColor": "magenta"
+        },
+        "break"
     ]
 }
