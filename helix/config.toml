@@ -3,6 +3,7 @@ theme = "ayu_mirage"
 [editor]
 cursorline = true
 rulers = [80, 120]
+color-modes = true
 
 [editor.cursor-shape]
 insert = "bar"
@@ -18,3 +19,6 @@ character = "▏"
 
 [editor.statusline]
 left = ["mode", "spinner", "version-control", "file-name"]
+mode.normal = "NORMAL"
+mode.insert = "INSERT"
+mode.select = "SELECT"
