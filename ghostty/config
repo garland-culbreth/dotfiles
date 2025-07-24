@@ -1,0 +1,9 @@
+window-width = 128
+window-height = 32
+
+theme = "Ayu Mirage"
+font-family = "AeonMono Nerd Font"
+font-size = 13
+
+cursor-style = underline
+shell-integration-features = no-cursor
