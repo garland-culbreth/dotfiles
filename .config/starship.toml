@@ -7,6 +7,14 @@ add_newline = true
 # Specify palette used for color names
 palette = 'ayu_mirage'
 
+[character]
+success_symbol = "[❯](bold fg:bright-green)"
+error_symbol = "[❯](bold fg:bright-red)"
+vimcmd_symbol = "[❮](bold fg:bright-yellow)"
+vimcmd_visual_symbol = "[❮](bold fg:bright-blue)"
+vimcmd_replace_symbol = "[❮](bold fg:bright-purple)"
+vimcmd_replace_one_symbol = "[❮](bold fg:bright-purple)"
+
 [username]
 style_user = 'bold fg:yellow'
 style_root = 'bold fg:red'
@@ -14,11 +22,23 @@ style_root = 'bold fg:red'
 [hostname]
 style = 'bold fg:blue'
 
-[git_branch]
-style = 'bold fg:purple'
-
 [directory]
 style = 'bold fg:teal'
+
+[git_branch]
+style = 'bold fg:bright-purple'
+symbol = ' '
+format = '[on](white) [$symbol$branch ]($style)'
+
+[git_status]
+style = "fg:bright-red"
+format = "[$modified$deleted$untracked$ahead_behind]($style) "
+modified = " "
+deleted = " "
+untracked = " "
+ahead = " "
+behind = " "
+up_to_date = " "
 
 # Define color palette
 [palettes.ayu_mirage]
