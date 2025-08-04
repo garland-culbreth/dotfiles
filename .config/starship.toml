@@ -140,7 +140,7 @@ conflicted = '[ ](fg:red) '
 untracked = "[ ](fg:orange)"
 ahead = "[ ](fg:blue)"
 behind = "[ ](fg:blue)"
-up_to_date = ""
+up_to_date = "[](fg:green)"
 
 # Define color palette
 [palettes.ayu_mirage]
