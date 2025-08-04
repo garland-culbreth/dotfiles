@@ -138,8 +138,8 @@ renamed = "[ ](fg:yellow)"
 stashed = "[ ](fg:blue)"
 conflicted = '[ ](fg:red) '
 untracked = "[ ](fg:orange)"
-ahead = "[ ](fg:blue)"
-behind = "[ ](fg:blue)"
+ahead = "[](fg:blue)"
+behind = "[](fg:blue)"
 up_to_date = "[](fg:green)"
 
 # Define color palette
