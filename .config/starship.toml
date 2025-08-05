@@ -42,7 +42,7 @@ style = 'bold fg:teal'
 [git_branch]
 style = 'bold fg:purple'
 symbol = ' '
-format = ' [$symbol$branch ]($style)'
+format = 'on [$symbol$branch ]($style)'
 
 [git_commit]
 tag_symbol = '  '
