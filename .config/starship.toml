@@ -7,142 +7,6 @@ add_newline = true
 # Specify palette used for color names
 palette = 'ayu_mirage'
 
-format = """
-$username\
-$hostname\
-$localip\
-$shlvl\
-$singularity\
-$kubernetes\
-$directory\
-$vcsh\
-$fossil_branch\
-$fossil_metrics\
-$hg_branch\
-$pijul_channel\
-$docker_context\
-$package\
-$c\
-$cmake\
-$cobol\
-$daml\
-$dart\
-$deno\
-$dotnet\
-$elixir\
-$elm\
-$erlang\
-$fennel\
-$gleam\
-$golang\
-$guix_shell\
-$haskell\
-$haxe\
-$helm\
-$java\
-$julia\
-$kotlin\
-$gradle\
-$lua\
-$nim\
-$nodejs\
-$ocaml\
-$opa\
-$perl\
-$php\
-$pulumi\
-$purescript\
-$python\
-$quarto\
-$raku\
-$rlang\
-$red\
-$ruby\
-$rust\
-$scala\
-$solidity\
-$swift\
-$terraform\
-$typst\
-$vlang\
-$vagrant\
-$zig\
-$buf\
-$nix_shell\
-$conda\
-$meson\
-$spack\
-$memory_usage\
-$aws\
-$gcloud\
-$openstack\
-$azure\
-$nats\
-$direnv\
-$env_var\
-$mise\
-$crystal\
-$custom\
-$sudo\
-$cmd_duration\
-$fill\
-$git_branch\
-$git_commit\
-$git_state\
-$git_metrics\
-$git_status\
-$line_break\
-$jobs\
-$battery\
-$time\
-$status\
-$os\
-$container\
-$netns\
-$shell\
-$character"""
-
-[character]
-success_symbol = "[❯](bold fg:green)"
-error_symbol = "[❯](bold fg:red)"
-vimcmd_symbol = "[❮](bold fg:yellow)"
-vimcmd_visual_symbol = "[❮](bold fg:blue)"
-vimcmd_replace_symbol = "[❮](bold fg:purple)"
-vimcmd_replace_one_symbol = "[❮](bold fg:purple)"
-
-[fill]
-symbol = "─"
-style = "subtext"
-
-[username]
-style_user = 'bold fg:yellow'
-style_root = 'bold fg:red'
-
-[hostname]
-style = 'bold fg:blue'
-
-[directory]
-style = 'bold fg:teal'
-
-[git_branch]
-style = 'bold fg:purple'
-symbol = ' '
-format = ' [$symbol$branch ]($style)'
-
-[git_status]
-style = "fg:red"
-format = "$modified$deleted$untracked$ahead_behind "
-modified = "[ ](fg:yellow)"
-deleted = "[ ](fg:red)"
-renamed = "[ ](fg:yellow)"
-stashed = "[ ](fg:blue)"
-conflicted = '[ ](fg:red) '
-untracked = "[ ](fg:orange)"
-ahead = "[](fg:blue)"
-behind = "[](fg:blue)"
-up_to_date = "[](fg:green)"
-
-# Define color palette
 [palettes.ayu_mirage]
 cyan = '#5CCFE6'
 yellow = '#FFD173'
@@ -155,3 +19,70 @@ purple = '#DFBFFF'
 text = '#CCCAC2'
 subtext = '#6B7A8B'
 surface0 = '#293040'
+
+[character]
+success_symbol = "[❯](bold fg:green)"
+error_symbol = "[❯](bold fg:red)"
+vimcmd_symbol = "[❮](bold fg:yellow)"
+vimcmd_visual_symbol = "[❮](bold fg:blue)"
+vimcmd_replace_symbol = "[❮](bold fg:purple)"
+vimcmd_replace_one_symbol = "[❮](bold fg:purple)"
+
+[username]
+style_user = 'bold fg:yellow'
+style_root = 'bold fg:red'
+
+[hostname]
+style = 'bold fg:blue'
+ssh_symbol = " "
+
+[directory]
+style = 'bold fg:teal'
+
+[git_branch]
+style = 'bold fg:purple'
+symbol = ' '
+format = ' [$symbol$branch ]($style)'
+
+[git_commit]
+tag_symbol = '  '
+
+[git_status]
+style = "fg:red"
+format = "$modified$deleted$untracked$ahead_behind "
+modified = "[ ](fg:yellow)"
+deleted = "[ ](fg:red)"
+renamed = "[ ](fg:yellow)"
+stashed = "[ ](fg:blue)"
+conflicted = '[ ](fg:red) '
+untracked = "[ ](fg:orange)"
+ahead = "[ ](fg:blue)"
+behind = "[ ](fg:blue)"
+up_to_date = "[ ](fg:green)"
+
+[package]
+symbol = "󰏗 "
+
+[docker_context]
+symbol = " "
+
+[conda]
+symbol = " "
+
+[python]
+symbol = " "
+
+[rust]
+symbol = "󱘗 "
+
+[c]
+symbol = " "
+
+[cpp]
+symbol = " "
+
+[cmake]
+symbol = " "
+
+[zig]
+symbol = " "
