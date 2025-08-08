@@ -1,9 +1,13 @@
 window-width = 128
-window-height = 32
+window-height = 36
 
 theme = "Ayu Mirage"
 font-family = "AeonMono Nerd Font"
 font-size = 13
 
 cursor-style = underline
+
+shell-integration = zsh
 shell-integration-features = no-cursor
+
+quit-after-last-window-closed = true
