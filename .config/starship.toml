@@ -94,6 +94,7 @@ ssh_symbol = " "
 [directory]
 style = "bold fg:teal"
 read_only = " 󰌾"
+truncation_symbol = "…/"
 
 [git_branch]
 style = "bold fg:purple"
