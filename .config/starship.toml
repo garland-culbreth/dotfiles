@@ -1,24 +1,79 @@
 # Get editor completions based on the config schema
-"$schema" = 'https://starship.rs/config-schema.json'
+"$schema" = "https://starship.rs/config-schema.json"
+
+format = """
+$os\
+$username\
+$hostname\
+$localip\
+$shlvl\
+$singularity\
+$kubernetes\
+$directory\
+$vcsh\
+$docker_context\
+$package\
+$c\
+$cmake\
+$julia\
+$lua\
+$ocaml\
+$python\
+$rust\
+$zig\
+$nix_shell\
+$conda\
+$meson\
+$spack\
+$memory_usage\
+$aws\
+$gcloud\
+$openstack\
+$azure\
+$nats\
+$direnv\
+$env_var\
+$mise\
+$crystal\
+$custom\
+$sudo\
+$cmd_duration\
+$fill\
+$git_branch\
+$git_commit\
+$git_state\
+$git_metrics\
+$git_status\
+$line_break\
+$jobs\
+$battery\
+$time\
+$status\
+$container\
+$shell\
+$character"""
 
 # Inserts a blank line between shell prompts
 add_newline = true
 
 # Specify palette used for color names
-palette = 'ayu_mirage'
+palette = "ayu_mirage"
 
 [palettes.ayu_mirage]
-cyan = '#5CCFE6'
-yellow = '#FFD173'
-blue = '#73D0FF'
-green = '#D5FF80'
-teal = '#95E6CB'
-red = '#F28779'
-orange = '#FFAD66'
-purple = '#DFBFFF'
-text = '#CCCAC2'
-subtext = '#6B7A8B'
-surface0 = '#293040'
+cyan = "#5CCFE6"
+yellow = "#FFD173"
+blue = "#73D0FF"
+green = "#D5FF80"
+teal = "#95E6CB"
+red = "#F28779"
+orange = "#FFAD66"
+purple = "#DFBFFF"
+text = "#CCCAC2"
+subtext = "#6B7A8B"
+surface0 = "#293040"
+
+[fill]
+symbol = " "
 
 [character]
 success_symbol = "[❯](bold fg:green)"
@@ -29,23 +84,24 @@ vimcmd_replace_symbol = "[❮](bold fg:purple)"
 vimcmd_replace_one_symbol = "[❮](bold fg:purple)"
 
 [username]
-style_user = 'bold fg:yellow'
-style_root = 'bold fg:red'
+style_user = "bold fg:yellow"
+style_root = "bold fg:red"
 
 [hostname]
-style = 'bold fg:blue'
+style = "bold fg:blue"
 ssh_symbol = " "
 
 [directory]
-style = 'bold fg:teal'
+style = "bold fg:teal"
+read_only = " 󰌾"
 
 [git_branch]
-style = 'bold fg:purple'
-symbol = ' '
-format = 'on [$symbol$branch ]($style)'
+style = "bold fg:purple"
+symbol = " "
+format = "on [$symbol$branch ]($style)"
 
 [git_commit]
-tag_symbol = '  '
+tag_symbol = "  "
 
 [git_status]
 style = "fg:red"
@@ -53,8 +109,8 @@ format = "$modified$deleted$untracked$ahead_behind "
 modified = "[ ](fg:yellow)"
 deleted = "[ ](fg:red)"
 renamed = "[ ](fg:yellow)"
-stashed = "[ ](fg:blue)"
-conflicted = '[ ](fg:red) '
+stashed = "[ ](fg:teal)"
+conflicted = "[ ](fg:red) "
 untracked = "[ ](fg:orange)"
 ahead = "[ ](fg:blue)"
 behind = "[ ](fg:blue)"
