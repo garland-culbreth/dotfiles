@@ -1,58 +1,6 @@
 # Get editor completions based on the config schema
 "$schema" = "https://starship.rs/config-schema.json"
 
-format = """
-$os\
-$username\
-$hostname\
-$localip\
-$shlvl\
-$singularity\
-$kubernetes\
-$directory\
-$vcsh\
-$docker_context\
-$package\
-$c\
-$cmake\
-$julia\
-$lua\
-$ocaml\
-$python\
-$rust\
-$zig\
-$nix_shell\
-$conda\
-$meson\
-$spack\
-$memory_usage\
-$aws\
-$gcloud\
-$openstack\
-$azure\
-$nats\
-$direnv\
-$env_var\
-$mise\
-$crystal\
-$custom\
-$sudo\
-$cmd_duration\
-$fill\
-$git_branch\
-$git_commit\
-$git_state\
-$git_metrics\
-$git_status\
-$line_break\
-$jobs\
-$battery\
-$time\
-$status\
-$container\
-$shell\
-$character"""
-
 # Inserts a blank line between shell prompts
 add_newline = true
 
@@ -94,7 +42,7 @@ ssh_symbol = " "
 [directory]
 style = "bold fg:teal"
 read_only = " 󰌾"
-truncation_symbol = "…/"
+truncation_symbol = "󰇘/"
 
 [git_branch]
 style = "bold fg:purple"
