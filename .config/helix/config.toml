@@ -19,6 +19,6 @@ character = "▏"
 
 [editor.statusline]
 left = ["mode", "spinner", "version-control", "file-name"]
-mode.normal = "NORMAL"
-mode.insert = "INSERT"
-mode.select = "SELECT"
+mode.normal = "N"
+mode.insert = "I"
+mode.select = "S"
