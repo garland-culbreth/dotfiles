@@ -2,8 +2,7 @@
 "$schema" = "https://starship.rs/config-schema.json"
 
 format = """
-[┌ ](surface0)\
-$all$fill $cmd_duration$time
+[┌ ](surface0)$all$fill $cmd_duration$time
 [└─](surface0)$character\
 """
 
