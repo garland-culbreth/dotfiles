@@ -2,8 +2,8 @@
 "$schema" = "https://starship.rs/config-schema.json"
 
 format = """
-[┌─ ](surface0)$all$fill $cmd_duration$time
-[└](surface0)$character\
+$all$fill $cmd_duration$time
+$character\
 """
 
 # Inserts a blank line between shell prompts
